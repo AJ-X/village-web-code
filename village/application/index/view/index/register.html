@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>一品兰轩小区物业信息管理系统</title>
+<link href="__STATIC__/index/style_log.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/style.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/userpanel.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/index/jquery.ui.all.css">
+
+</head>
+
+<body class="login" mycollectionplug="bind">
+<div class="login_m">
+<div class="login_logo"><h1>一品兰轩小区物业信息管理系统</h1></div>
+<div class="login_boder">
+
+<div class="login_padding" id="login_model">
+  <h2 style="text-align: center;font-size: 20px;">注册</h2>
+<form action="{:url('enroll')}" method="post">
+  <h2>管理员名称</h2>
+  <label>
+    <input type="text" id="username" name="username" class="txt_input txt_input2" onfocus="if (value ==&#39;Your name&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;Your name&#39;}" value="Your name">
+  </label>
+  <h2>管理员密码</h2>
+  <label>
+    <input type="password" name="password" id="userpwd" class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******">
+  </label>
+
+  <div class="rem_sub">
+  	<label>
+      <input type="reset" class="sub_button" name="button" id="button" value="重置" style="opacity: 0.7;">
+    </label>
+   <label>
+      <input type="submit" class="sub_button" name="button" id="button" value="注册" style="opacity: 0.7;">
+    </label>
+    <label>
+      <a href="{:url('index')}"><input type="button" class="sub_button1" name="button" id="button" value="返回" style="opacity: 0.7;width: 63px;height: 31px;"></a>
+    </label>
+  </div>
+  </form>
+</div>
+<!--login_padding  Sign up end-->
+</div><!--login_boder end-->
+</div><!--login_m end-->
+</body>
+</html>
